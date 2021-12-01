@@ -1,5 +1,5 @@
 {
-  "name": "covid19",
+  "name": "vue-leaflet-covid-19-statistics",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.7.6",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
