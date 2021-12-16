@@ -1,17 +1,14 @@
 <template>
-  <HelloWorld />
+  <router-view />
 </template>
 
-<script>
-import { defineComponent } from "vue";
-import HelloWorld from "./view/index.vue";
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
 
-export default defineComponent({
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-});
+@Options({
+  components: {},
+})
+export default class App extends Vue {}
 </script>
 
 <style>

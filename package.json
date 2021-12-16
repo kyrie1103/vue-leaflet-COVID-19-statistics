@@ -3,25 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "npm run serve"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^0.2.4",
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "dayjs": "^1.10.7",
+    "echarts": "^5.2.2",
+    "element-plus": "^1.2.0-beta.6",
     "leaflet": "^1.7.1",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/leaflet": "^1.7.6",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "typescript": "~4.1.5",
+    "unplugin-auto-import": "^0.5.3",
+    "unplugin-vue-components": "^0.17.9"
   },
   "eslintConfig": {
     "root": true,
@@ -30,12 +45,19 @@
     },
     "extends": [
       "plugin:vue/vue3-essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "@vue/typescript"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@typescript-eslint/parser"
     },
-    "rules": {}
+    "rules": {
+        "no-": "off",
+        "no-debugger":"off",
+        "no-console": "off",
+        "no-empty":"off",
+        "no-unused-vars":"off"
+    }
   },
   "browserslist": [
     "> 1%",
